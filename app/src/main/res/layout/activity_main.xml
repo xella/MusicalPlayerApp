@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#270132">
+
+    <TextView
+        android:id="@+id/current_song"
+        style="@style/ListStyle"
+        android:text="@string/category_current_song"/>
+
+    <TextView
+        android:id="@+id/songs"
+        style="@style/ListStyle"
+        android:text="@string/category_songs"/>
+
+    <TextView
+        android:id="@+id/artists"
+        style="@style/ListStyle"
+        android:text="@string/category_artists"/>
+
+    <TextView
+        android:id="@+id/albums"
+        style="@style/ListStyle"
+        android:text="@string/category_albums"/>
+
+</LinearLayout>

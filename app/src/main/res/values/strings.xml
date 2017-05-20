@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">MusicPlayerApp</string>
+    <!-- Title for the application. -->
+    <string name="app_name">Music Player</string>
+
+    <!-- Category name for current song -->
+    <string name="category_current_song">Now Playing</string>
+
+    <!-- Category name for songs list -->
+    <string name="category_songs">Songs</string>
+
+    <!-- Category name for artists list -->
+    <string name="category_artists">Artists</string>
+
+    <!-- Category name for albums list -->
+    <string name="category_albums">Albums</string>
 </resources>
