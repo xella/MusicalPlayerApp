@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.musicplayerapp.AlbumsActivity"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    tools:context="com.example.android.musicplayerapp.AlbumsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,72 +19,83 @@
             android:orientation="horizontal">
 
             <android.support.v7.widget.CardView
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_gravity="center"
+                style="@style/CardViewStyle"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                card_view:cardCornerRadius="4dp">
+                android:layout_weight="1">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="8dp"
                     android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="150dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover6" />
 
-                    <TextView
-                        style="@style/AlbumCardAlbumName"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Tu Veneno" />
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                    <TextView
-                        style="@style/AlbumCardArtistName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Natalia Oreiro" />
+                        <TextView
+                            style="@style/CardViewTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tu Veneno" />
+
+                        <TextView
+                            style="@style/CardViewSubtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Natalia Oreiro" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_gravity="center"
+                style="@style/CardViewStyle"
                 android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
                 android:layout_height="wrap_content"
-                card_view:cardCornerRadius="4dp">
+                android:layout_weight="1">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:padding="8dp"
                     android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
-                        android:id="@+id/imageView"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover2" />
 
-                    <TextView
-                        style="@style/AlbumCardAlbumName"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="21" />
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                    <TextView
-                        style="@style/AlbumCardArtistName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Adele" />
+                        <TextView
+                            android:id="@+id/textView"
+                            style="@style/CardViewTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="21" />
+
+                        <TextView
+                            style="@style/CardViewSubtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Adele" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </android.support.v7.widget.CardView>
         </LinearLayout>
@@ -96,17 +105,16 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_gravity="center"
+            <android.support.v7.widget.CardView
+                style="@style/CardViewStyle"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                card_view:cardCornerRadius="4dp">
+                android:layout_weight="1">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="8dp"
                     android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
@@ -115,32 +123,38 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover3" />
 
-                    <TextView
-                        style="@style/AlbumCardAlbumName"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Britney" />
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                    <TextView
-                        style="@style/AlbumCardArtistName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Britney Spears" />
+                        <TextView
+                            style="@style/CardViewTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Britney" />
+
+                        <TextView
+                            style="@style/CardViewSubtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Britney Spears" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_gravity="center"
+            <android.support.v7.widget.CardView
                 android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
                 android:layout_height="wrap_content"
-                card_view:cardCornerRadius="4dp">
+                android:layout_weight="1"
+                style="@style/CardViewStyle">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:padding="8dp"
                     android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
@@ -149,17 +163,25 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover4" />
 
-                    <TextView
-                        style="@style/AlbumCardAlbumName"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Eterno Agosto" />
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                    <TextView
-                        style="@style/AlbumCardArtistName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Alvaro Soler" />
+                        <TextView
+                            style="@style/CardViewTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Eterno Agosto" />
+
+                        <TextView
+                            style="@style/CardViewSubtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Alvaro Soler" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </android.support.v7.widget.CardView>
         </LinearLayout>
@@ -170,18 +192,15 @@
             android:orientation="horizontal">
 
             <android.support.v7.widget.CardView
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_gravity="center"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                card_view:cardCornerRadius="4dp">
+                android:layout_weight="1"
+                style="@style/CardViewStyle">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:padding="8dp"
                     android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
@@ -190,33 +209,38 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover5" />
 
-                    <TextView
-                        style="@style/AlbumCardAlbumName"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Elegy for the Arctic" />
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                    <TextView
-                        style="@style/AlbumCardArtistName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Ludovico Einaudi" />
+                        <TextView
+                            style="@style/CardViewTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Elegy for the Arctic" />
+
+                        <TextView
+                            style="@style/CardViewSubtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ludovico Einaudi" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_gravity="center"
                 android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
                 android:layout_height="wrap_content"
-                card_view:cardCornerRadius="4dp">
+                android:layout_weight="1"
+                style="@style/CardViewStyle">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:padding="8dp"
                     android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
@@ -225,17 +249,25 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover6" />
 
-                    <TextView
-                        style="@style/AlbumCardAlbumName"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Tu Veneno" />
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                    <TextView
-                        style="@style/AlbumCardArtistName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Natalia Oreiro" />
+                        <TextView
+                            style="@style/CardViewTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tu Veneno" />
+
+                        <TextView
+                            style="@style/CardViewSubtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Natalia Oreiro" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </android.support.v7.widget.CardView>
         </LinearLayout>
@@ -246,18 +278,15 @@
             android:orientation="horizontal">
 
             <android.support.v7.widget.CardView
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_gravity="center"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                card_view:cardCornerRadius="4dp">
+                android:layout_weight="1"
+                style="@style/CardViewStyle">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:padding="8dp"
                     android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
@@ -266,33 +295,38 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover7" />
 
-                    <TextView
-                        style="@style/AlbumCardAlbumName"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Awake" />
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                    <TextView
-                        style="@style/AlbumCardArtistName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Skillet" />
+                        <TextView
+                            style="@style/CardViewTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Awake" />
+
+                        <TextView
+                            style="@style/CardViewSubtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Skillet" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_gravity="center"
                 android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
                 android:layout_height="wrap_content"
-                card_view:cardCornerRadius="4dp">
+                android:layout_weight="1"
+                style="@style/CardViewStyle">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:padding="8dp"
                     android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
@@ -301,17 +335,25 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover4" />
 
-                    <TextView
-                        style="@style/AlbumCardAlbumName"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Eterno Agosto" />
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                    <TextView
-                        style="@style/AlbumCardArtistName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Alvaro Soler" />
+                        <TextView
+                            style="@style/CardViewTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Eterno Agosto" />
+
+                        <TextView
+                            style="@style/CardViewSubtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Alvaro Soler" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </android.support.v7.widget.CardView>
         </LinearLayout>
@@ -322,18 +364,15 @@
             android:orientation="horizontal">
 
             <android.support.v7.widget.CardView
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_gravity="center"
                 android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
                 android:layout_height="wrap_content"
-                card_view:cardCornerRadius="4dp">
+                android:layout_weight="1"
+                style="@style/CardViewStyle">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:padding="8dp"
                     android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
@@ -342,33 +381,38 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover2" />
 
-                    <TextView
-                        style="@style/AlbumCardAlbumName"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="21" />
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                    <TextView
-                        style="@style/AlbumCardArtistName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Adele" />
+                        <TextView
+                            style="@style/CardViewTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="21" />
+
+                        <TextView
+                            style="@style/CardViewSubtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Adele" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_gravity="center"
+                style="@style/CardViewStyle"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                card_view:cardCornerRadius="4dp">
+                android:layout_weight="1">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:padding="8dp"
                     android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
@@ -377,17 +421,24 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover5" />
 
-                    <TextView
-                        style="@style/AlbumCardAlbumName"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Elegy for the Arctic" />
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                    <TextView
-                        style="@style/AlbumCardArtistName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Ludovico Einaudi" />
+                        <TextView
+                            style="@style/CardViewTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Elegy for the Arctic" />
+
+                        <TextView
+                            style="@style/CardViewSubtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ludovico Einaudi" />
+                    </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
         </LinearLayout>

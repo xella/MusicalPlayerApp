@@ -1,27 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#270132">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.musicplayerapp.MainActivity">
 
     <TextView
         android:id="@+id/current_song"
         style="@style/ListStyle"
         android:text="@string/category_current_song"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"/>
+
     <TextView
         android:id="@+id/songs"
         style="@style/ListStyle"
         android:text="@string/category_songs"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"/>
 
     <TextView
         android:id="@+id/artists"
         style="@style/ListStyle"
         android:text="@string/category_artists"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"/>
+
     <TextView
         android:id="@+id/albums"
         style="@style/ListStyle"
         android:text="@string/category_albums"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"/>
 
 </LinearLayout>
