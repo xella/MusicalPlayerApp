@@ -21,13 +21,15 @@
         <activity
             android:name=".CurrentSongActivity"
             android:label="@string/category_current_song" />
-        <activity android:name=".SongsActivity"
+        <activity
+            android:name=".SongsActivity"
             android:label="@string/category_songs" />
-        <activity android:name=".ArtistsActivity"
+        <activity
+            android:name=".ArtistsActivity"
             android:label="@string/category_artists" />
-        <activity android:name=".AlbumsActivity"
-            android:label="@string/category_albums"/>
-
+        <activity
+            android:name=".AlbumsActivity"
+            android:label="@string/category_albums" />
     </application>
 
 </manifest>
