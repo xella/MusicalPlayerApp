@@ -17,20 +17,46 @@
         <item name="android:textAppearance">?android:textAppearanceListItem</item>
     </style>
 
-    <style name="CardViewStyle">
+    <style name="CardViewGridStyle">
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_margin">4dp</item>
     </style>
 
-    <style name="CardViewTitle">
+    <style name="CardViewGridTitle">
         <item name="android:textSize">17sp</item>
         <item name="android:textStyle">normal</item>
         <item name="android:paddingTop">2dp</item>
         <item name="android:paddingBottom">2dp</item>
     </style>
 
-    <style name="CardViewSubtitle">
+    <style name="CardViewGridSubtitle">
         <item name="android:textSize">14sp</item>
         <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="CardViewListStyle">
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="CardViewListImage">
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="CardViewListTitle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="CardViewListSubtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="CardViewListSubtitle.Italic">
+        <item name="android:textStyle">italic</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 </resources>
