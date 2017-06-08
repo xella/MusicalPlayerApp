@@ -13,9 +13,31 @@ public class SongsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_songs);
 
-        CardView song1= (CardView) findViewById(R.id.song_one);
+        // Finding CardViews for the first 3 in the list
+        CardView song1 = (CardView) findViewById(R.id.song_one);
+        CardView song2 = (CardView) findViewById(R.id.song_two);
+        CardView song3 = (CardView) findViewById(R.id.song_three);
 
+        //Set an OnClickListener for that CardView
         song1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent playSongIntent = new Intent(SongsActivity.this, CurrentSongActivity.class);
+                startActivity(playSongIntent);
+            }
+        });
+
+        //Set an OnClickListener for that CardView
+        song2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent playSongIntent = new Intent(SongsActivity.this, CurrentSongActivity.class);
+                startActivity(playSongIntent);
+            }
+        });
+
+        //Set an OnClickListener for that CardView
+        song3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent playSongIntent = new Intent(SongsActivity.this, CurrentSongActivity.class);
