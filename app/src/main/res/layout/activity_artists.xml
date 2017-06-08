@@ -27,7 +27,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="8dp">
+                    style="@style/CardViewGridInnerLayout">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
@@ -39,13 +39,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="8dp">
+                        style="@style/CardViewGridInnerLayout">
 
                         <TextView
                             style="@style/CardViewGridTitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Natalia Oreiro" />
+                            android:text="@string/artist6" />
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -60,11 +60,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="8dp">
+                    style="@style/CardViewGridInnerLayout">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover2" />
 
@@ -72,13 +72,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="8dp">
+                        style="@style/CardViewGridInnerLayout">
 
                         <TextView
                             style="@style/CardViewGridTitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Adele" />
+                            android:text="@string/artist2" />
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -99,7 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="8dp">
+                    style="@style/CardViewGridInnerLayout">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
@@ -111,13 +111,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="8dp">
+                        style="@style/CardViewGridInnerLayout">
 
                         <TextView
                             style="@style/CardViewGridTitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Britney Spears" />
+                            android:text="@string/artist3" />
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -132,11 +132,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="8dp">
+                    style="@style/CardViewGridInnerLayout">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover4" />
 
@@ -144,13 +144,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="8dp">
+                        style="@style/CardViewGridInnerLayout">
 
                         <TextView
                             style="@style/CardViewGridTitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Alvaro Soler" />
+                            android:text="@string/artist4" />
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -171,7 +171,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="8dp">
+                    style="@style/CardViewGridInnerLayout">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
@@ -183,13 +183,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="8dp">
+                        style="@style/CardViewGridInnerLayout">
 
                         <TextView
                             style="@style/CardViewGridTitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="LudoviCo Einaudi" />
+                            android:text="@string/artist5" />
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -204,11 +204,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="8dp">
+                    style="@style/CardViewGridInnerLayout">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover7" />
 
@@ -216,18 +216,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="8dp">
+                        style="@style/CardViewGridInnerLayout">
 
                         <TextView
                             style="@style/CardViewGridTitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Skillet" />
+                            android:text="@string/artist7" />
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
         </LinearLayout>
     </LinearLayout>
-
 </ScrollView>
 

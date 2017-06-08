@@ -13,4 +13,28 @@
 
     <!-- Category name for albums list -->
     <string name="category_albums">Albums</string>
+
+    <!-- Artists list -->
+    <string name="artist2">Adele</string>
+    <string name="artist3">Britney Spears</string>
+    <string name="artist4">Alvaro Soler</string>
+    <string name="artist5">Ludovico Einaudi</string>
+    <string name="artist6">Natalia Oreiro</string>
+    <string name="artist7">Skillet</string>
+
+    <!-- Album titles -->
+    <string name="album2">21</string>
+    <string name="album3">Britney</string>
+    <string name="album4">Eterno Agosto</string>
+    <string name="album5">Elegy for the Arctic</string>
+    <string name="album6">Tu Veneno</string>
+    <string name="album7">Awake</string>
+
+    <!-- Song titles -->
+    <string name="song2">Rolling in the Deep</string>
+    <string name="song3">Lonely</string>
+    <string name="song4">Agosto</string>
+    <string name="song5">Elegy for the Arctic</string>
+    <string name="song6">Rio De La Plata</string>
+    <string name="song7">Monster</string>
 </resources>

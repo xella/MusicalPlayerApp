@@ -38,7 +38,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Rolling in the Deep" />
+                        android:text="@string/song2" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                             style="@style/CardViewListSubtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Adele" />
+                            android:text="@string/artist2" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -61,7 +61,7 @@
                             style="@style/CardViewListSubtitle.Italic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="21" />
+                            android:text="@string/album2" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -94,7 +94,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Agosto" />
+                        android:text="@string/song4" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -106,7 +106,7 @@
                             style="@style/CardViewListSubtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Alvaro Soler" />
+                            android:text="@string/artist4" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -117,7 +117,7 @@
                             style="@style/CardViewListSubtitle.Italic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Eterno Agosto" />
+                            android:text="@string/album4" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -150,7 +150,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Lonely" />
+                        android:text="@string/song3" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -162,7 +162,7 @@
                             style="@style/CardViewListSubtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Britney Spears" />
+                            android:text="@string/artist3" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -173,7 +173,7 @@
                             style="@style/CardViewListSubtitle.Italic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Britney" />
+                            android:text="@string/album3" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -206,7 +206,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Elegy for the Arctic" />
+                        android:text="@string/song5" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -218,7 +218,7 @@
                             style="@style/CardViewListSubtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ludovico Einaudi" />
+                            android:text="@string/artist5" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -229,7 +229,7 @@
                             style="@style/CardViewListSubtitle.Italic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Elegy for the Arctic" />
+                            android:text="@string/album5" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -262,7 +262,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Rio De La Plata" />
+                        android:text="@string/song6" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -274,7 +274,7 @@
                             style="@style/CardViewListSubtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Natalia Oreiro" />
+                            android:text="@string/artist6" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -285,7 +285,7 @@
                             style="@style/CardViewListSubtitle.Italic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tu Veneno" />
+                            android:text="@string/album6" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -318,7 +318,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Monster" />
+                        android:text="@string/song7" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -330,7 +330,7 @@
                             style="@style/CardViewListSubtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Skillet" />
+                            android:text="@string/artist7" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -341,7 +341,7 @@
                             style="@style/CardViewListSubtitle.Italic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Awake" />
+                            android:text="@string/album7" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -374,7 +374,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Rolling in the Deep" />
+                        android:text="@string/song2" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -386,7 +386,7 @@
                             style="@style/CardViewListSubtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Adele" />
+                            android:text="@string/artist2" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -397,7 +397,7 @@
                             style="@style/CardViewListSubtitle.Italic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="21" />
+                            android:text="@string/album2" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -430,7 +430,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Agosto" />
+                        android:text="@string/song4" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -442,7 +442,7 @@
                             style="@style/CardViewListSubtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Alvaro Soler" />
+                            android:text="@string/artist4" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -453,7 +453,7 @@
                             style="@style/CardViewListSubtitle.Italic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Eterno Agosto" />
+                            android:text="@string/album4" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -486,7 +486,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Lonely" />
+                        android:text="@string/song3" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -498,7 +498,7 @@
                             style="@style/CardViewListSubtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Britney Spears" />
+                            android:text="@string/artist3" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -509,7 +509,7 @@
                             style="@style/CardViewListSubtitle.Italic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Britney" />
+                            android:text="@string/album3" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -542,7 +542,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Elegy for the Arctic" />
+                        android:text="@string/song5" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -554,7 +554,7 @@
                             style="@style/CardViewListSubtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ludovico Einaudi" />
+                            android:text="@string/artist5" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -565,7 +565,7 @@
                             style="@style/CardViewListSubtitle.Italic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Elegy for the Arctic" />
+                            android:text="@string/album5" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -598,7 +598,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Rio De La Plata" />
+                        android:text="@string/song6" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -610,7 +610,7 @@
                             style="@style/CardViewListSubtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Natalia Oreiro" />
+                            android:text="@string/artist6" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -621,7 +621,7 @@
                             style="@style/CardViewListSubtitle.Italic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tu Veneno" />
+                            android:text="@string/album6" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -654,7 +654,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:text="Monster" />
+                        android:text="@string/song7" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -666,7 +666,7 @@
                             style="@style/CardViewListSubtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Skillet" />
+                            android:text="@string/artist7" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -677,7 +677,7 @@
                             style="@style/CardViewListSubtitle.Italic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Awake" />
+                            android:text="@string/album7" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
