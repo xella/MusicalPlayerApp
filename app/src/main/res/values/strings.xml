@@ -37,4 +37,9 @@
     <string name="song5">Elegy for the Arctic</string>
     <string name="song6">Rio De La Plata</string>
     <string name="song7">Monster</string>
+
+    <!-- Explanations -->
+    <string name="activity_main_explanation">
+        The main menu of the app where the user can choose \"where to go\" by clicking on any item in the menu.
+    </string>
 </resources>

@@ -11,39 +11,32 @@
         style="@style/ListStyle"
         android:text="@string/category_current_song"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#ddd"/>
+    <View style="@style/DividerView"/>
 
     <TextView
         android:id="@+id/songs"
         style="@style/ListStyle"
         android:text="@string/category_songs"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#ddd"/>
+    <View style="@style/DividerView"/>
 
     <TextView
         android:id="@+id/artists"
         style="@style/ListStyle"
         android:text="@string/category_artists"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#ddd"/>
+    <View style="@style/DividerView"/>
 
     <TextView
         android:id="@+id/albums"
         style="@style/ListStyle"
         android:text="@string/category_albums"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#ddd"/>
+    <View style="@style/DividerView"/>
 
+    <TextView
+        style="@style/explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_main_explanation"/>
 </LinearLayout>
