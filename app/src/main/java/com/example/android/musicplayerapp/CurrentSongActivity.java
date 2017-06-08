@@ -25,6 +25,7 @@ public class CurrentSongActivity extends AppCompatActivity {
                 if (mediaPlayer == null) {
                     length = 0;
                     mediaPlayer = MediaPlayer.create(CurrentSongActivity.this, R.raw.piano);
+                    setSongLength();
                     playButton.setImageResource(R.drawable.ic_pause_white_48dp);
                     mediaPlayer.start();
                 } else if (mediaPlayer.isPlaying()) {
@@ -39,34 +40,43 @@ public class CurrentSongActivity extends AppCompatActivity {
 
             }
         });
+    }
 
-//        if (mediaPlayer != null) {
-//            long duration = mediaPlayer.getDuration();
-//
-//            int seconds = (int) (duration / 1000) % 60 ;
-//            int minutes = (int) ((duration / (1000*60)) % 60);
-//            int hours   = (int) ((duration / (1000*60*60)) % 24);
-//
-//            TextView songTimeLeft = (TextView) findViewById(R.id.song_time_left);
-//
-//            if (hours != 0) {
-//                songTimeLeft.setText(hours + ":" + minutes + ":" + seconds);
-//            } else {
-//                songTimeLeft.setText(minutes + ":" + seconds);
-//            }
-//        }
+    /*
+     *  Sets length of the current song as a text into TextView
+     */
+    public void setSongLength(){
+        if (mediaPlayer != null) {
+            long duration = mediaPlayer.getDuration();
+
+            int seconds = (int) (duration / 1000) % 60 ;
+            int minutes = (int) ((duration / (1000*60)) % 60);
+            int hours   = (int) ((duration / (1000*60*60)) % 24);
+
+            TextView songTimeLeft = (TextView) findViewById(R.id.song_time_left);
+
+            if (hours != 0) {
+                songTimeLeft.setText(hours + ":" + minutes + ":" + seconds);
+            } else {
+                songTimeLeft.setText(minutes + ":" + seconds);
+            }
+        }
     }
 
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        mediaPlayer.stop();
+        if (mediaPlayer != null) {
+            mediaPlayer.stop();
+        }
     }
 
     @Override
     protected void onPause(){
         super.onPause();
-        mediaPlayer.stop();
+        if (mediaPlayer != null) {
+            mediaPlayer.stop();
+        }
     }
 
 }
