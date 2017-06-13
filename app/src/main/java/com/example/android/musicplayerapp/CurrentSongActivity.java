@@ -3,11 +3,15 @@ package com.example.android.musicplayerapp;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static android.R.attr.duration;
+import static android.R.attr.text;
+import static com.example.android.musicplayerapp.R.string.activity_current_song_explanation;
 
 public class CurrentSongActivity extends AppCompatActivity {
 
@@ -18,6 +22,7 @@ public class CurrentSongActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_song);
 
+        // OnClickListener for "Play/Pause" button
         final ImageButton playButton = (ImageButton) findViewById(R.id.play_button);
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,13 +42,24 @@ public class CurrentSongActivity extends AppCompatActivity {
                     mediaPlayer.seekTo(length);
                     mediaPlayer.start();
                 }
+            }
+        });
 
+        // Toast message will be shown when activity is created
+        showToastMessage(getString(R.string.activity_current_song_explanation));
+
+        // OnClickListener for "Previous" button
+        ImageButton previousButton = (ImageButton) findViewById(R.id.previous_button);
+        previousButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToastMessage(getString(R.string.activity_current_song_explanation));
             }
         });
     }
 
     /*
-     *  Sets length of the current song as a text into TextView
+     *  Sets length of the current song as a text into related TextView
      */
     public void setSongLength(){
         if (mediaPlayer != null) {
@@ -79,4 +95,8 @@ public class CurrentSongActivity extends AppCompatActivity {
         }
     }
 
+    // Method for showing a Toast message
+    public void showToastMessage(String message) {
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+    }
 }

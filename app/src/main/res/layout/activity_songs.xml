@@ -11,6 +11,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            style="@style/explanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_songs_explanation" />
+
         <android.support.v7.widget.CardView
             android:id="@+id/song_one"
             style="@style/CardViewListStyle"
@@ -22,7 +28,6 @@
                 android:layout_height="match_parent">
 
                 <com.example.android.musicplayerapp.SquareImageView
-                    style="@style/CardViewListImage"
                     android:layout_width="@dimen/list_item_image_size"
                     android:layout_height="match_parent"
                     android:src="@drawable/cover2" />
@@ -79,7 +84,6 @@
                 android:layout_height="match_parent">
 
                 <com.example.android.musicplayerapp.SquareImageView
-                    style="@style/CardViewListImage"
                     android:layout_width="@dimen/list_item_image_size"
                     android:layout_height="match_parent"
                     android:src="@drawable/cover4" />
@@ -136,7 +140,6 @@
                 android:layout_height="match_parent">
 
                 <com.example.android.musicplayerapp.SquareImageView
-                    style="@style/CardViewListImage"
                     android:layout_width="@dimen/list_item_image_size"
                     android:layout_height="match_parent"
                     android:src="@drawable/cover3" />
@@ -192,7 +195,6 @@
                 android:layout_height="match_parent">
 
                 <com.example.android.musicplayerapp.SquareImageView
-                    style="@style/CardViewListImage"
                     android:layout_width="@dimen/list_item_image_size"
                     android:layout_height="match_parent"
                     android:src="@drawable/cover5" />
@@ -248,7 +250,6 @@
                 android:layout_height="match_parent">
 
                 <com.example.android.musicplayerapp.SquareImageView
-                    style="@style/CardViewListImage"
                     android:layout_width="@dimen/list_item_image_size"
                     android:layout_height="match_parent"
                     android:src="@drawable/cover6" />
@@ -304,7 +305,6 @@
                 android:layout_height="match_parent">
 
                 <com.example.android.musicplayerapp.SquareImageView
-                    style="@style/CardViewListImage"
                     android:layout_width="@dimen/list_item_image_size"
                     android:layout_height="match_parent"
                     android:src="@drawable/cover7" />
@@ -360,7 +360,6 @@
                 android:layout_height="match_parent">
 
                 <com.example.android.musicplayerapp.SquareImageView
-                    style="@style/CardViewListImage"
                     android:layout_width="@dimen/list_item_image_size"
                     android:layout_height="match_parent"
                     android:src="@drawable/cover2" />
@@ -416,7 +415,6 @@
                 android:layout_height="match_parent">
 
                 <com.example.android.musicplayerapp.SquareImageView
-                    style="@style/CardViewListImage"
                     android:layout_width="@dimen/list_item_image_size"
                     android:layout_height="match_parent"
                     android:src="@drawable/cover4" />
@@ -472,7 +470,6 @@
                 android:layout_height="match_parent">
 
                 <com.example.android.musicplayerapp.SquareImageView
-                    style="@style/CardViewListImage"
                     android:layout_width="@dimen/list_item_image_size"
                     android:layout_height="match_parent"
                     android:src="@drawable/cover3" />
@@ -528,7 +525,6 @@
                 android:layout_height="match_parent">
 
                 <com.example.android.musicplayerapp.SquareImageView
-                    style="@style/CardViewListImage"
                     android:layout_width="@dimen/list_item_image_size"
                     android:layout_height="match_parent"
                     android:src="@drawable/cover5" />
@@ -584,7 +580,6 @@
                 android:layout_height="match_parent">
 
                 <com.example.android.musicplayerapp.SquareImageView
-                    style="@style/CardViewListImage"
                     android:layout_width="@dimen/list_item_image_size"
                     android:layout_height="match_parent"
                     android:src="@drawable/cover6" />
@@ -640,7 +635,6 @@
                 android:layout_height="match_parent">
 
                 <com.example.android.musicplayerapp.SquareImageView
-                    style="@style/CardViewListImage"
                     android:layout_width="@dimen/list_item_image_size"
                     android:layout_height="match_parent"
                     android:src="@drawable/cover7" />

@@ -18,21 +18,17 @@
 
     <com.example.android.musicplayerapp.SquareImageView
         android:id="@+id/album_cover"
-        android:layout_width="220dp"
+        style="@style/CurrentSongAlbumCoverImage"
+        android:layout_width="@dimen/current_song_album_cover"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="16dp"
         android:src="@drawable/cover2" />
 
     <LinearLayout
+        style="@style/CurrentSongSongInfoLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/album_cover"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:padding="8dp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/song_title"
@@ -48,13 +44,11 @@
 
             <TextView
                 android:id="@+id/artist_name"
+                style="@style/CurrentSongArtistName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/artist2"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/white"
-                android:textSize="16dp" />
+                android:text="@string/artist2" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -64,21 +58,19 @@
 
             <TextView
                 android:id="@+id/album_title"
+                style="@style/CurrentSongAlbumTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/album2"
-                android:textColor="@android:color/white"
-                android:textSize="16dp"
-                android:textStyle="italic" />
+                android:text="@string/album2" />
         </LinearLayout>
 
         <SeekBar
             android:id="@+id/seek_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="24dp" />
+            android:layout_marginBottom="@dimen/seek_bar_bottom_margin"
+            android:layout_marginTop="@dimen/seek_bar_top_margin" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -90,7 +82,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="0:00"
+                android:text="@string/song_lenght_default_value"
                 android:textColor="@android:color/white" />
 
             <TextView
@@ -98,40 +90,36 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="0:00"
+                android:text="@string/song_lenght_default_value"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/white" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
+        style="@style/PlayerControlLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_margin="8dp"
-            android:background="@android:color/transparent"
+            android:id="@+id/previous_button"
+            style="@style/CurrentSongPlayerControlButtons"
+            android:layout_width="@dimen/player_control_button_size"
+            android:layout_height="@dimen/player_control_button_size"
             android:src="@drawable/ic_skip_previous_white_48dp" />
 
         <ImageButton
             android:id="@+id/play_button"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_margin="8dp"
-            android:background="@android:color/transparent"
+            style="@style/CurrentSongPlayerControlButtons"
+            android:layout_width="@dimen/player_control_button_size"
+            android:layout_height="@dimen/player_control_button_size"
             android:src="@drawable/ic_play_arrow_white_48dp" />
 
         <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_margin="8dp"
-            android:background="@android:color/transparent"
+            style="@style/CurrentSongPlayerControlButtons"
+            android:layout_width="@dimen/player_control_button_size"
+            android:layout_height="@dimen/player_control_button_size"
             android:src="@drawable/ic_skip_next_white_48dp" />
     </LinearLayout>
 </RelativeLayout>

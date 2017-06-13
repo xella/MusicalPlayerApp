@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.android.musicplayerapp.MainActivity">
 
     <TextView
         android:id="@+id/current_song"
-        style="@style/ListStyle"
-        android:text="@string/category_current_song"/>
+        style="@style/MenuListStyle"
+        android:text="@string/category_current_song" />
 
-    <View style="@style/DividerView"/>
+    <View style="@style/DividerView" />
 
     <TextView
         android:id="@+id/songs"
-        style="@style/ListStyle"
-        android:text="@string/category_songs"/>
+        style="@style/MenuListStyle"
+        android:text="@string/category_songs" />
 
-    <View style="@style/DividerView"/>
+    <View style="@style/DividerView" />
 
     <TextView
         android:id="@+id/artists"
-        style="@style/ListStyle"
-        android:text="@string/category_artists"/>
+        style="@style/MenuListStyle"
+        android:text="@string/category_artists" />
 
-    <View style="@style/DividerView"/>
+    <View style="@style/DividerView" />
 
     <TextView
         android:id="@+id/albums"
-        style="@style/ListStyle"
-        android:text="@string/category_albums"/>
+        style="@style/MenuListStyle"
+        android:text="@string/category_albums" />
 
-    <View style="@style/DividerView"/>
+    <View style="@style/DividerView" />
 
     <TextView
         style="@style/explanation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity_main_explanation"/>
+        android:text="@string/activity_main_explanation" />
 </LinearLayout>

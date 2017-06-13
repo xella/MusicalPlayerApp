@@ -12,34 +12,41 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            style="@style/explanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_albums_explanation" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <android.support.v7.widget.CardView
+                android:id="@+id/album_one"
                 style="@style/CardViewGridStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
                 <LinearLayout
+                    style="@style/CardViewGridInnerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    style="@style/CardViewGridInnerLayout">
+                    android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover6" />
 
                     <LinearLayout
+                        style="@style/CardViewGridInnerLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/CardViewGridInnerLayout">
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/CardViewListTitle"
@@ -57,28 +64,29 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/album_two"
                 style="@style/CardViewGridStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
                 <LinearLayout
+                    style="@style/CardViewGridInnerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    style="@style/CardViewGridInnerLayout">
+                    android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover2" />
 
                     <LinearLayout
+                        style="@style/CardViewGridInnerLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/CardViewGridInnerLayout">
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textView"
@@ -103,28 +111,29 @@
             android:orientation="horizontal">
 
             <android.support.v7.widget.CardView
+                android:id="@+id/album_three"
                 style="@style/CardViewGridStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
                 <LinearLayout
+                    style="@style/CardViewGridInnerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    style="@style/CardViewGridInnerLayout">
+                    android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover3" />
 
                     <LinearLayout
+                        style="@style/CardViewGridInnerLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/CardViewGridInnerLayout">
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/CardViewListTitle"
@@ -142,28 +151,29 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/album_four"
                 style="@style/CardViewGridStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
                 <LinearLayout
+                    style="@style/CardViewGridInnerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    style="@style/CardViewGridInnerLayout">
+                    android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover4" />
 
                     <LinearLayout
+                        style="@style/CardViewGridInnerLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/CardViewGridInnerLayout">
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/CardViewListTitle"
@@ -193,22 +203,22 @@
                 android:layout_weight="1">
 
                 <LinearLayout
+                    style="@style/CardViewGridInnerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    style="@style/CardViewGridInnerLayout">
+                    android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover5" />
 
                     <LinearLayout
+                        style="@style/CardViewGridInnerLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/CardViewGridInnerLayout">
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/CardViewListTitle"
@@ -232,22 +242,22 @@
                 android:layout_weight="1">
 
                 <LinearLayout
+                    style="@style/CardViewGridInnerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    style="@style/CardViewGridInnerLayout">
+                    android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover6" />
 
                     <LinearLayout
+                        style="@style/CardViewGridInnerLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/CardViewGridInnerLayout">
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/CardViewListTitle"
@@ -277,22 +287,22 @@
                 android:layout_weight="1">
 
                 <LinearLayout
+                    style="@style/CardViewGridInnerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    style="@style/CardViewGridInnerLayout">
+                    android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover7" />
 
                     <LinearLayout
+                        style="@style/CardViewGridInnerLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/CardViewGridInnerLayout">
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/CardViewListTitle"
@@ -316,22 +326,22 @@
                 android:layout_weight="1">
 
                 <LinearLayout
+                    style="@style/CardViewGridInnerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    style="@style/CardViewGridInnerLayout">
+                    android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover4" />
 
                     <LinearLayout
+                        style="@style/CardViewGridInnerLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/CardViewGridInnerLayout">
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/CardViewListTitle"
@@ -361,22 +371,22 @@
                 android:layout_weight="1">
 
                 <LinearLayout
+                    style="@style/CardViewGridInnerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    style="@style/CardViewGridInnerLayout">
+                    android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover2" />
 
                     <LinearLayout
+                        style="@style/CardViewGridInnerLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/CardViewGridInnerLayout">
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/CardViewListTitle"
@@ -400,22 +410,22 @@
                 android:layout_weight="1">
 
                 <LinearLayout
+                    style="@style/CardViewGridInnerLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    style="@style/CardViewGridInnerLayout">
+                    android:orientation="vertical">
 
                     <com.example.android.musicplayerapp.SquareImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="wrap_content"
                         android:scaleType="centerCrop"
                         android:src="@drawable/cover5" />
 
                     <LinearLayout
+                        style="@style/CardViewGridInnerLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        style="@style/CardViewGridInnerLayout">
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/CardViewListTitle"

@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="divider_height">1dp</dimen>
+
+    <!-- Explanation block dimensions -->
+    <dimen name="explanation_block_padding">8dp</dimen>
+    <dimen name="explanation_block_margin">8dp</dimen>
+
+    <!-- Common dimensions for list items in App-->
     <dimen name="list_item_height">72dp</dimen>
-    <dimen name="list_item_image_size">72dp</dimen>
     <dimen name="list_item_content_margin">8dp</dimen>
+    <dimen name="list_item_image_size">72dp</dimen>
+
+    <dimen name="menu_list_item_padding">16dp</dimen>
+
+    <!-- CardView common dimensions for list and grid layouts -->
+    <dimen name="card_view_margin">4dp</dimen>
+    <dimen name="card_view_title_text">17sp</dimen>
+    <dimen name="card_view_title_vertical_padding">2dp</dimen>
+    <dimen name="card_view_subtitle_text">14sp</dimen>
+    <dimen name="card_view_inner_layout_padding">8dp</dimen>
+
+    <!-- Current Song Activity dimensions -->
+    <dimen name="current_song_title_size">24sp</dimen>
+    <dimen name="current_song_subtitle_size">16sp</dimen>
+    <dimen name="current_song_margin">20dp</dimen>
+    <dimen name="current_song_album_cover">220dp</dimen>
+    <dimen name="current_song_album_cover_margin">16dp</dimen>
+    <dimen name="player_control_button_size">48dp</dimen>
+    <dimen name="player_control_button_margin">8dp</dimen>
+    <dimen name="player_control_layout_margin">20dp</dimen>
+    <dimen name="current_song_info_padding">8dp</dimen>
+
+    <!-- SeekBar margin values -->
+    <dimen name="seek_bar_top_margin">24dp</dimen>
+    <dimen name="seek_bar_bottom_margin">8dp</dimen>
 </resources>
