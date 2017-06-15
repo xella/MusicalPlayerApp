@@ -24,10 +24,38 @@
         android:src="@drawable/cover2" />
 
     <LinearLayout
+        android:id="@+id/buttons_block"
+        style="@style/CurrentSongButtonsBlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/album_cover">
+
+        <Button
+            android:id="@+id/favorite_btn"
+            style="@style/CurrentSongButtonsBlockButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/ic_favorite_border_black_24dp"
+            android:text="@string/favorite_button_text" />
+
+        <Button
+            android:id="@+id/purchase_btn"
+            style="@style/CurrentSongButtonsBlockButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/ic_shopping_cart_black_24dp"
+            android:text="@string/purchase_button_text" />
+    </LinearLayout>
+
+    <LinearLayout
         style="@style/CurrentSongSongInfoLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/album_cover"
+        android:layout_below="@id/buttons_block"
         android:orientation="vertical">
 
         <TextView

@@ -116,4 +116,32 @@
         <item name="android:textStyle">italic</item>
         <item name="android:textSize">@dimen/current_song_subtitle_size</item>
     </style>
+
+    <style name="CurrentSongButtonsBlock">
+        <item name="android:layout_margin">@dimen/current_song_buttons_block_margin</item>
+    </style>
+
+    <style name="CurrentSongButtonsBlockButton">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <!-- Payment Activity -->
+    <style name="PaymentTotalPriceBlock">
+        <item name="android:layout_margin">@dimen/payment_total_price_block_margin</item>
+        <item name="android:padding">@dimen/payment_total_price_block_padding</item>
+    </style>
+
+    <style name="PaymentTotalPriceTextView">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PaymentButton">
+        <item name="android:layout_marginLeft">@dimen/payment_button_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/payment_button_vertical_margin</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
 </resources>

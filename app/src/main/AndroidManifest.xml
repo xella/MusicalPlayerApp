@@ -30,6 +30,9 @@
         <activity
             android:name=".AlbumsActivity"
             android:label="@string/category_albums" />
+        <activity
+            android:name=".PaymentActivity"
+            android:label="Payment" />
     </application>
 
 </manifest>

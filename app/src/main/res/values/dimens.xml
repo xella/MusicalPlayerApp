@@ -30,8 +30,14 @@
     <dimen name="player_control_button_margin">8dp</dimen>
     <dimen name="player_control_layout_margin">20dp</dimen>
     <dimen name="current_song_info_padding">8dp</dimen>
+    <dimen name="current_song_buttons_block_margin">16dp</dimen>
 
     <!-- SeekBar margin values -->
     <dimen name="seek_bar_top_margin">24dp</dimen>
     <dimen name="seek_bar_bottom_margin">8dp</dimen>
+
+    <!-- Payment Activity dimensions -->
+    <dimen name="payment_total_price_block_margin">8dp</dimen>
+    <dimen name="payment_total_price_block_padding">8dp</dimen>
+    <dimen name="payment_button_vertical_margin">16dp</dimen>
 </resources>

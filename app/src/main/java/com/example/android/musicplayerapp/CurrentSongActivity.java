@@ -1,22 +1,26 @@
 package com.example.android.musicplayerapp;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import static android.R.attr.duration;
 import static android.R.attr.text;
+import static android.R.id.message;
 import static com.example.android.musicplayerapp.R.string.activity_current_song_explanation;
 
 public class CurrentSongActivity extends AppCompatActivity {
 
     MediaPlayer mediaPlayer;
     int length = 0;
+    Boolean isFavorite = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +58,34 @@ public class CurrentSongActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToastMessage(getString(R.string.activity_current_song_explanation));
+            }
+        });
+
+        // OnClickListener for "Favorite" button
+        final Button favoriteButton = (Button) findViewById(R.id.favorite_btn);
+        favoriteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!isFavorite) {
+                    isFavorite = true;
+                    favoriteButton.setCompoundDrawablesWithIntrinsicBounds( getDrawable(R.drawable.ic_favorite_black_24dp), null, null, null);
+                    showToastMessage(getString(R.string.favorite_button_positive_message));
+                } else {
+                    isFavorite = false;
+                    favoriteButton.setCompoundDrawablesWithIntrinsicBounds( getDrawable(R.drawable.ic_favorite_border_black_24dp), null, null, null);
+                    showToastMessage(getString(R.string.favorite_button_negative_message));
+                }
+
+            }
+        });
+
+        //OnClickListener for "Purchase" button
+        Button purchaseButton = (Button) findViewById(R.id.purchase_btn);
+        purchaseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openPaymentActivityIntent = new Intent(CurrentSongActivity.this, PaymentActivity.class);
+                startActivity(openPaymentActivityIntent);
             }
         });
     }

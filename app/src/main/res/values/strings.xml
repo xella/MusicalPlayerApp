@@ -71,4 +71,38 @@
         \nIt\'ll be stopped when you will leave this activity.
         \nThe album cover is also set as a background image.
     </string>
+
+    <string name="activity_payment_explanation">
+        This activity presents details about  the song that user wants to purchase.
+        \nAfter clicking "Purchase" button on this screen.
+        \nIn-app Billing API should be used in order to be able to sell something through the App.
+    </string>
+
+    <string name="favorite_button_positive_message">
+        Song marked as Favorite.
+    </string>
+
+    <string name="favorite_button_negative_message">
+        Song is not Favorite anymore.
+    </string>
+
+    <string name="favorite_button_text">
+        Favorite
+    </string>
+
+    <string name="purchase_button_text">
+        Purchase
+    </string>
+
+    <string name="total_price_text_view">
+        Total price:
+    </string>
+
+    <string name="price">
+        $2.15
+    </string>
+
+    <string name="payment_button">
+        Pay
+    </string>
 </resources>
