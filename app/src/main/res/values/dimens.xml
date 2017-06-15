@@ -31,6 +31,8 @@
     <dimen name="player_control_layout_margin">20dp</dimen>
     <dimen name="current_song_info_padding">8dp</dimen>
     <dimen name="current_song_buttons_block_margin">16dp</dimen>
+    <dimen name="current_song_buttons_block_button_vertical_margin">16dp</dimen>
+    <dimen name="current_song_buttons_block_button_padding">16dp</dimen>
 
     <!-- SeekBar margin values -->
     <dimen name="seek_bar_top_margin">24dp</dimen>

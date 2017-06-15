@@ -122,10 +122,10 @@
     </style>
 
     <style name="CurrentSongButtonsBlockButton">
-        <item name="android:layout_marginLeft">16dp</item>
-        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">@dimen/current_song_buttons_block_button_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/current_song_buttons_block_button_vertical_margin</item>
         <item name="android:background">@android:color/white</item>
-        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingLeft">@dimen/current_song_buttons_block_button_padding</item>
     </style>
 
     <!-- Payment Activity -->
