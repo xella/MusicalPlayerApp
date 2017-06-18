@@ -62,14 +62,20 @@
         This activity presents a list of songs (from selected album, artist or the whole library).
         If you\'ll click on the song then activity with a selected song as a currently playing will appear.
         \nRight now, only first three CardViews have OnClickListeners!
+        \n
+        \nAlso, there should be a custom class, for example, SongInformation
+        which will contain all information about the song: Title, Artist name, Album name, Album cover and Price.
     </string>
 
     <string name="activity_current_song_explanation">
         To see this toast message once again press \"Previous\" button!
         \nThis activity presents a currently playing song.
+        \nTo complete the implementation of this activity MediaPlayer class should be used (to play audio files).
         \nIt\'s partially implemented. You can play and pause a sample song.
         \nIt\'ll be stopped when you will leave this activity.
         \nThe album cover is also set as a background image.
+        \nAlso, there should be a custom class, for example, SongInformation
+        which will contain all information about the song: Title, Artist name, Album name, Album cover and Price.
     </string>
 
     <string name="activity_payment_explanation">
